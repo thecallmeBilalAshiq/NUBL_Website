@@ -1,0 +1,172 @@
+<html>
+<head>
+<title> WELCOME TO NUBL </title>
+<link rel="icon" type="icon" href="favicon.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://kit.fontawesome.com/6cf4d176c0.js" crossorigin="anonymous"></script>
+
+<style>
+body 
+{
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	margin: 0;
+	padding 0;
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+}
+		@keyframes fadeInAnimation {
+		    0% {
+		        opacity: 0;
+		    }
+		    100% {
+		        opacity: 1;
+		     }
+		}
+		.column 
+		{
+			border: 1px solid grey;
+			float: left;
+			width: 250px;
+			border-radius: 20px;
+		}
+		.row:after 
+		{
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		ul {
+			box-shadow: 10px 0px 20px white;
+			list-style-type: none;
+			font-family: "Poppins", sans-serif;
+			font-size: 16px;
+			overflow: hidden;
+			padding: 20px;
+			position: sticky;
+		}
+		li {
+			float: left;
+		}
+		li a {
+			display: block;
+			text-decoration: none;
+		}
+		.login {
+			background-color: black;
+			font-family: "Poppins", sans-serif;
+			font-size: 13px;
+			border-radius: 50px;
+		}
+		.login:hover {
+			background-color: white;
+			font-family: "Poppins", sans-serif;
+			font-size: 13px;
+			border-radius: 50px;
+		}
+		.link:avtive {
+			font-weight: bold;
+			color: black;
+			padding: 10px 10px 10px 10px;
+		}
+		.link {
+			color: blue;
+			padding: 10px 10px 10px 10px;
+		}
+		.link:visited {
+			color: black;
+			padding: 10px 10px 10px 10px;
+		}
+		.link:hover {
+			font-weight: bold;
+			color: black;
+			padding: 10px 10px 10px 10px;
+		}
+		.imgtext {
+			color: white;
+			padding: 10px 30px 10px 30px;
+		}
+		.imgtext:visited {
+			color: white;
+			padding: 10px 30px 10px 30px;
+		}
+		.imgtext:hover {
+			color: black;
+			padding: 10px 30px 10px 30px;
+		}
+		th {
+			text-align: left;
+			padding: 0px 0px 0px 360px;
+		}
+		td {
+			font-size:15px;
+			text-align: left;
+			padding: 0px 0px 0px 40px;
+		}
+</style>
+</head>
+<body>
+<ul>
+	<a href="index.html"><img src="logo.png" style="width:350px;height:50px;"></a>
+	<li style="float:right"><a href="#fb"><i class="fa-solid fa-circle-question" style="float:right;font-size:45px;color:Orangered;"></i></a></li>
+	<li style="float:right;padding:0px 20px 0px 40px;"><button class="button login"><a href="login.html" class="imgtext" target="_blank">E-BANKING LOGIN</a></button></li>
+	<li style="float:right;"><a href="contact.html" class="link">CONTACT</a></li>
+	<li style="float:right;"><a href="about.html" class="link">ABOUT</a></li>
+	<li style="float:right;"><a href="business.html" class="link">BUSINESS</a></li>
+	<li style="float:right;"><a href="personal.html" class="link">PERSONAL</a></li>
+	<li style="float:right;"><a href="index.html" class="link">HOME</a></li>
+</ul>
+			<img src="home-banner.png" style="width:1349px;height:330px;margin:-16px 0px 0px 0px;">
+			<h1 style="text-align:center;font-size:50px;"> WELCOME TO NUBL </h1>
+			<p style="text-align:center"> As you are our valuable Customer, you are requested to
+			please explore our website to find some thing best for you! </p>
+
+			<h2 style="text-align:center;font-size:35px;border: 2px solid red; margin: 60px 450px 40px 450px;border-radius: 30px"> WAYS OF BANKING </h2>
+	<div class="row">
+			<div class="column" style="margin: 0px 0px 0px 50px;">
+				<img src="banks.png" style="width:250px;height:250px;border-radius: 20px;">
+				<div style="padding:6px 12px 12px 12px; text-align: center;">Branches</div>
+			</div>
+			<div class="column" style="margin: 0px 0px 0px 50px;">
+		  		<img src="atms.png" style="width:250px;height:250px;border-radius: 20px;">
+				<div style="padding:6px 12px 12px 12px; text-align: center;">ATMs</div>
+			</div>
+			<div class="column" style="margin: 0px 0px 0px 50px;">
+				<img src="ebanking.png" style="width:250px;height:250px;border-radius: 20px;">
+				<div style="padding:6px 12px 12px 12px; text-align: center;">E-Banking</div>
+			</div>
+			<div class="column" style="margin: 0px 0px 0px 50px;">
+				<img src="cards.png" style="width:250px;height:250px;border-radius: 20px;">
+				<div style="padding:6px 12px 12px 12px; text-align: center;">Debit / Credit Card</div>
+			</div>
+	</div>
+
+			<h2 style="text-align:center;font-size:35px;border: 2px solid red; margin: 60px 450px 40px 450px;border-radius: 30px"> OUR PROGRESS </h2>
+				<table>
+					<tr>
+		    				<th>Saving Accounts Opened</th>
+		    				<td><progress id="file" value="89" max="100" style="width:400px;padding:15px 0px 15px 0px"> 89% </progress></td>
+		  			</tr>
+					<tr>
+		    				<th>Current Accounts Opened</th>
+		    				<td><progress id="file" value="75" max="100" style="width:400px;padding:15px 0px 15px 0px;"> 75% </progress></td>
+		  			</tr>
+					<tr>
+		    				<th>Approved Loans</th>
+		    				<td><progress id="file" value="58" max="100" style="width:400px;padding:15px 0px 15px 0px"> 58% </progress></td>
+		  			</tr>
+					<tr>
+		    				<th>Activate Debit / Credit Cards</th>
+		    				<td><progress id="file" value="94" max="100" style="width:400px;padding:15px 0px 15px 0px"> 94% </progress></td>
+		  			</tr>
+				</table>
+
+				<br><br><br>
+
+				<footer style="box-shadow: 10px 0px 20px grey; margin: 0px 0px -16px 0px;">
+						<p style="text-align:center; padding: 20px">Copyright © BMTBL Bank Ltd.</p>
+				</footer>
+</body>
+</html>
